@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-green: #004935;
+    --seconary-green: #89dab4;
+    --white:#ffffff;
+}
+body{
+    background-color: var(--white);
+    color: white;
+    
+}
+main{
+    max-width: 500px;
+    margin: auto;
+    background-color:var(--primary-green);
+    text-align: center;
+    padding: 1rem;
+    height: auto;
+}
+/* initally */
+.bill-gen{
+    color: var(--seconary-green);
+    font-size: 1rem;
+}
+/* cash given */
+.cash-given{
+    color: var(--seconary-green);
+    font-size: 1rem;
+    display: none;
+}
+/* error msgs */
+.error-msg{
+    display: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* return amt */
+.amt-return{
+    margin: auto;
+    text-align: center;
+    display: none;
+
+}
+
+
+
+
+
+/* input */
+#bill-input{
+    width: 60%;
+    height:20px;
+    padding: 1rem;
+}
+#cash-input{
+    width: 60%;
+    height:20px;
+    padding: 1rem;
+}
+/* buttons */
+#btn-next{
+    display: block;
+    padding: 0.7rem;
+    background-color: var(--seconary-green);
+    color: var(--primary-green);
+    font-size: large;
+    margin: 1rem auto;
+}
+#btn-check{
+    display: block;
+    padding: 0.7rem;
+    background-color: var(--seconary-green);
+    color: var(--primary-green);
+    font-size: large;
+    margin: 1rem auto;
+}
+
+.return-cash{
+    font-size: 1.5rem;
+    color: var(--seconary-green);
+    margin-bottom: 0.5rem;
+}
+
+.amt-return{
+    margin: 2rem 0;
+}
+ 
+.amt-return table th td{
+    padding: 0.2rem;
+    /* border: 2px solid white;
+    background-color: red;
+    color: var(--primary-green); */
+}
+.noOFNotes{
+    background-color:white;
+    font-weight: bold;
+    color: var(--primary-green);
+    
+}
+table,th,td{
+    width: 100%;
+    table-layout: fixed;
+    border: 2px solid var(--primary-green);
+    background-color: var(--seconary-green);
+    color: var(--primary-green);
+    border-collapse: collapse;
+}
